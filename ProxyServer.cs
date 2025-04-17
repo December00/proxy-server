@@ -109,7 +109,6 @@ namespace proxy
                         var responseParts = responseFirstLine.Split(' ');
                         var statusCode = responseParts.Length >= 2 ? responseParts[1] : "Unknown";
 
-                        // Выводим только URL, код и метод
                         Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] {fullUrl} - {statusCode}");
 
                         while (responseBytesRead > 0)
